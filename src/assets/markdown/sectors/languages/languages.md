@@ -1,0 +1,2 @@
+Languages are the cornerstone of software development, providing the syntax and structure that bring code to life. The Languages sector in a Tech Radar is a deep dive into the coding languages that power applications. Whether it's the versatility of Python, the interactivity of JavaScript, or the robustness of Java, this sector explores the evolving preferences and innovations within the coding world.
+

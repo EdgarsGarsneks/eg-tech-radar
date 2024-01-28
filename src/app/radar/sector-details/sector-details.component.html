@@ -1,0 +1,22 @@
+<markdown ngPreserveWhitespaces class="ml-2 my-10"
+    [src]="sector?.data?.md ?? 'assets/markdown/sectors/nonselected.md'" />
+@if (sector) {
+<div class="flex flex-wrap">
+    @for (ring of radar.rings; track ring; let i = $index ) {
+    <div class="my-5 basis-1/3">
+        @if (groups && sector != undefined && sector != undefined){
+            <h2 class="text-2xl font-bold" [ngStyle]="{'color': ring.color}">{{ring.label}}</h2>
+            @for(entry of groups[sector!.id][i]; track entry){
+            <p class="text-lg cursor-pointer"
+                [ngClass]="{'bg-purple-300': mouseOverEntry?.id == entry.id, 'text-purple-700 font-bold': radar.selectedEntry?.id == entry.id}"
+                (click)="onEntrySelect.emit(entry)"
+                (mouseover)="onEntryHover.emit(entry)"
+                (mouseout)="onEntryHoverOut.emit(entry)">
+                {{entry.id + 1}}. {{entry.label}}
+            </p>
+            }
+        }
+    </div>
+    }
+</div>
+}

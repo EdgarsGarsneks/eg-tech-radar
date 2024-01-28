@@ -1,0 +1,30 @@
+<div class="h-[100vh] container mx-auto mt-5">
+    @if(radar){
+    <div class="flex flex-wrap max-h-full">
+        <div class="md:basis-full 2xl:basis-1/2">
+            <svg id="radarSvg" class="mx-auto"></svg>
+        </div>
+        <div class="md:basis-full 2xl:basis-1/2 overflow-y-auto max-h-full">
+            <select class="float-left text-4xl font-bold w-full"
+                [ngModel]="selectedSector()"
+                (ngModelChange)="radar.selectSector($event)">
+                <option [ngValue]="undefined" disabled selected>Select sector to start</option>
+                @for(sector of radar.sectors;track sector; let i = $index){
+                    <option [ngValue]="sector">{{sector.label}}</option>
+                }
+            </select>
+            <app-sector-details
+                [radar]="radar"
+                [sector]="selectedSector()"
+                [mouseOverEntry]="mouseOverEntry()"
+                (onEntrySelect)="radar.selectEntry($event)"
+                (onEntryHover)="radar.hoverEntry($event)"
+                (onEntryHoverOut)="radar.hoverEntryOut($event)">
+            </app-sector-details>
+        </div>
+        <div class="basis-full">
+            <app-blip-details [entry]="radar.selectedEntry"> </app-blip-details>
+        </div>
+    </div>
+    }
+</div>

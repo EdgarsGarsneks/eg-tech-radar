@@ -1,0 +1,20 @@
+@if (entry) {
+<div class="flex flex-wrap">
+    <div class="basis-full">
+        <div class="flex justify-between bg-purple-200 py-2 pl-5">
+            <h1 class="text-5xl font-bold">
+                {{entry.id + 1}}. {{entry.label}}
+            </h1>
+            <h1 class="font-bold mx-5 text-3xl" [ngStyle]="{'color': entry.ring.color}">
+                {{entry.ring.label}}
+            </h1>
+        </div>
+        <hr class="w-100">
+        <div class="my-5 px-3">
+            <markdown 
+            [data]="entry.data?._markdown?.body || 'No content available'"
+             />
+        </div>
+    </div>
+</div>
+}
