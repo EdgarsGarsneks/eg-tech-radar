@@ -1,0 +1,74 @@
+{
+    "width": 700,
+    "style": {
+        "background": "#00000000",
+        "lineColor": "gray",
+        "seed": 60,
+        "blips": {
+          "r": 12,
+          "offset": 15,
+          "fontSize": "12px"
+        },
+        "tooltip": {
+          "background": "#C084FC",
+          "fontSize": 15,
+          "textColor": "white"
+        },
+        "rings": {
+          "showLabels": true,
+          "showCurvedLabels": true,
+          "showBackground": true,
+          "fontSize": 30
+        },
+        "sectors": {
+          "showLabels": true,
+          "fontSize": 30
+        }
+    },
+    "sectors": [
+        { "label": "Techniques", "data": { "md": "assets/markdown/sectors/techniques/techniques.md" }},
+        { "label": "Tools",      "data": { "md": "assets/markdown/sectors/tools/tools.md" }},
+        { "label": "Platforms",  "data": { "md": "assets/markdown/sectors/platforms/platforms.md" }},
+        { "label": "Languages",  "data": { "md": "assets/markdown/sectors/languages/languages.md" }},
+        { "label": "Frameworks", "data": { "md": "assets/markdown/sectors/frameworks/frameworks.md" }}
+    ],
+    "rings": [
+        { "label": "ADOPT",  "color": "green" },
+        { "label": "TRIAL",  "color": "blue" },
+        { "label": "ASSESS", "color": "orange" },
+        { "label": "HOLD",   "color": "red" }
+    ],
+    "entries": [
+        { "label": "Microservices", "sector": 0, "ring": 0, "moved": 0, "data": { "md": "assets/markdown/sectors/markdown.md"}},
+        { "label": "OpenTelemetry", "sector": 0, "ring": 1, "moved": 0, "data": { "md": "https://raw.githubusercontent.com/open-telemetry/opentelemetry.io/main/content/en/docs/what-is-opentelemetry.md"}},
+        { "label": "SaFe",          "sector": 0, "ring": 2, "moved": 1, "data": { "md": "assets/markdown/sectors/markdown.md"}},
+        { "label": "Agile",         "sector": 0, "ring": 0, "moved": 0, "data": { "md": "assets/markdown/sectors/markdown.md"}},
+        { "label": "Test Driven Development",    "sector": 0, "ring": 3, "moved": -1, "data": { "md": "assets/markdown/sectors/markdown.md"}},
+
+        { "label": "GitHub Copilot",     "sector": 1, "ring": 1, "moved":  1, "data": { "md": "assets/markdown/sectors/markdown.md"}},
+        { "label": "Postman",            "sector": 1, "ring": 3, "moved": -1, "data": { "md": "https://raw.githubusercontent.com/postmanlabs/postman-docs/develop/README.md"}},
+        { "label": "Insomnia",           "sector": 1, "ring": 2, "moved": -1, "data": { "md": "https://raw.githubusercontent.com/Kong/insomnia/develop/README.md"}},
+        { "label": "Visual Studio Code", "sector": 1, "ring": 0, "moved":  0, "data": { "md": "https://raw.githubusercontent.com/microsoft/vscode/main/README.md"}},
+        
+        { "label": "Vercel",         "sector": 2, "ring": 2, "moved": 0, "data": { "md": "https://raw.githubusercontent.com/vercel/community/main/README.md"}},
+        { "label": "AWS",            "sector": 2, "ring": 0, "moved": 0, "data": { "md": "assets/markdown/sectors/platforms/aws.md"}},
+        { "label": "Microsoft Azure","sector": 2, "ring": 1, "moved": 0, "data": { "md": "assets/markdown/sectors/platforms/azure.md"}},
+        { "label": "GCP",            "sector": 2, "ring": 2, "moved": -1, "data": { "md": "assets/markdown/sectors/markdown.md"}},
+
+        { "label": "Java",       "sector": 3, "ring": 0, "moved": 0, "data": { "md": "assets/markdown/sectors/markdown.md"}},
+        { "label": "TypeScript", "sector": 3, "ring": 0, "moved": 0, "data": { "md": "https://raw.githubusercontent.com/microsoft/TypeScript/main/README.md"}},
+        { "label": "Kotlin",     "sector": 3, "ring": 1, "moved": 1, "data": { "md": "https://raw.githubusercontent.com/JetBrains/kotlin/master/ReadMe.md"}},
+        { "label": "Python",     "sector": 3, "ring": 1, "moved": 0, "data": { "md": "assets/markdown/sectors/markdown.md"}},
+        { "label": "Go",         "sector": 3, "ring": 1, "moved": 0, "data": { "md": "https://raw.githubusercontent.com/golang/go/master/README.md"}},
+
+        { "label": "Spring-Boot","sector": 4, "ring": 0, "moved": 0,  "data": { "md": "assets/markdown/sectors/frameworks/spring-boot.md"}},
+        { "label": "JUnit5",     "sector": 4, "ring": 0, "moved": 0,  "data": { "md": "https://raw.githubusercontent.com/junit-team/junit5/main/README.md"}},
+        { "label": "Node.js",    "sector": 4, "ring": 0, "moved": 0,  "data": { "md": "https://raw.githubusercontent.com/nodejs/nodejs.org/main/pages/en/about/index.md"}},
+        { "label": "Next.js",    "sector": 4, "ring": 1, "moved": 0,  "data": { "md": "https://raw.githubusercontent.com/vercel/next.js/canary/docs/index.mdx"}},
+        { "label": "Svelte",     "sector": 4, "ring": 1, "moved": 0, "data":  { "md": "https://raw.githubusercontent.com/sveltejs/svelte/main/README.md"}},
+        { "label": "Quarkus",    "sector": 4, "ring": 2, "moved": 1,  "data": { "md": "https://raw.githubusercontent.com/quarkusio/quarkus/main/README.md"}},
+        { "label": "Astro",      "sector": 4, "ring": 2, "moved": 1, "data":  { "md": "https://raw.githubusercontent.com/withastro/astro/main/README.md"}},
+        { "label": "React",      "sector": 4, "ring": 3, "moved": -1, "data": { "md": "https://raw.githubusercontent.com/reactjs/react.dev/main/src/content/learn/index.md"}},
+        { "label": "Angular",    "sector": 4, "ring": 0, "moved": 0,  "data": { "md": "https://raw.githubusercontent.com/angular/angular/main/aio/content/guide/what-is-angular.md"}}      
+    ]
+}
